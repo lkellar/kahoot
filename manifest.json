@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Kahoot Keyboard Shortcuts",
+  "version": "1.0",
+
+  "description": "Adds keyboard shortcuts to Kahoot.",
+
+  "content_scripts": [
+    {
+      "matches": ["*://kahoot.it/*"],
+      "js": ["kahoot.js"]
+    }
+  ],
+
+  "options_ui": {
+    "page": "options/options.html"
+  },
+
+  "permissions": ["storage"],
+
+  "applications": {
+    "gecko": {
+      "id": "kahoot@lkellar.org"
+    }
+  }
+}
