@@ -12,6 +12,11 @@
     }
   ],
 
+  "icons": {
+    "48": "icon.png",
+    "96": "icon@2x.png"
+  },
+
   "options_ui": {
     "page": "options/options.html"
   },

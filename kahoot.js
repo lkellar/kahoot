@@ -1,17 +1,30 @@
-function keyDown(oKeyEvent) {
+const defaults = {
+    triangle: 'o',
+    circle: 's',
+    diamond: 'p',
+    square: 'd'
+};
+
+async function keyDown(oKeyEvent) {
     let shape;
 
-    if (oKeyEvent.key === 's') {
-        shape = 'circle';
-    } else if (oKeyEvent.key === 'd') {
-        shape = 'square';
-    } else if (oKeyEvent.key === 'p') {
-        shape = 'diamond';
-    } else if (oKeyEvent.key === 'o') {
-        shape = 'triangle'
+    shape = await fetchShape(oKeyEvent.key);
+    if (shape) {
+        const iframe = document.getElementById('gameBlockIframe').contentDocument;
+        iframe.getElementsByClassName(`card-button--${shape}`)[0].click();
     }
-    console.log(shape);
-    const iframe = document.getElementById('gameBlockIframe').contentDocument;
-    iframe.getElementsByClassName(`card-button--${shape}`)[0].click();
 }
+
+async function fetchShape(key) {
+    let storageItem = await browser.storage.sync.get();
+    if (storageItem === {}) {
+        storageItem = defaults;
+    }
+    return getKeyByValue(storageItem, key);
+}
+
+function getKeyByValue(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+}
+
 window.addEventListener("keydown", keyDown);

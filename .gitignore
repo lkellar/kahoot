@@ -106,3 +106,4 @@ fabric.properties
 # IntelliJ project files
 gen
 .idea/
+*.ai
