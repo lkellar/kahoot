@@ -23,4 +23,4 @@ Once finished updated the shortcuts, hit save, and the new shortcuts will instan
 
 If you have an issue, problem, or suggestion, feel free to file an issue.
 
-If you have some code to contribute, please submit a PR! It'll be highly appreciated it.
+If you have some code to contribute, please submit a PR! It'll be highly appreciated.
