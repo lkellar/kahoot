@@ -5,13 +5,16 @@ const defaults = {
     square: 'd'
 };
 
+// Kahoot answers now have classes like answer-0, or answer-1
+// So I order them, and use index in array to idenfity
+const shapes = ['triangle', 'diamond', 'circle', 'square']
+
 async function keyDown(oKeyEvent) {
     let shape;
 
     shape = await fetchShape(oKeyEvent.key);
     if (shape) {
-        const iframe = document.getElementById('gameBlockIframe').contentDocument;
-        iframe.getElementsByClassName(`card-button--${shape}`)[0].click();
+        document.querySelector(`[data-functional-selector="answer answer-${shapes.indexOf(shape)}"]`).click();
     }
 }
 
