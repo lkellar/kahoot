@@ -3,9 +3,9 @@ body {
 }
 
 label {
-    width: 150px;
+    min-width: 175px;
     text-align: left;
-    float: left;
+    display: inline-block;
 }
 
 main {
