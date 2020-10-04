@@ -1,5 +1,17 @@
+body {
+    font-family: sans-serif;
+}
+
 label {
     width: 150px;
     text-align: left;
     float: left;
+}
+
+main {
+    margin: 1em 2em;
+}
+
+#unique {
+    color: red;
 }

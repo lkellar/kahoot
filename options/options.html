@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <title>Set Kahoot Keyboard Shortcuts</title>
 </head>
 <body>
 
-<h3 style="font-family: sans-serif">Set Keyboard Shortcuts</h3>
-
-<form>
-    <label>Top Left - Triangle:</label> <input maxlength="1" type="text" id="triangle"><br>
-    <label>Top Right - Diamond:</label> <input maxlength="1" type="text" id="diamond"><br>
-    <label>Bottom Left - Circle:</label> <input maxlength="1" type="text" id="circle"><br>
-    <label>Bottom Right - Square:</label>  <input maxlength="1" type="text" id="square"><br><br>
-    <button type="submit">Save</button>
-</form>
-
+<main>
+    <h3 style="font-family: sans-serif">Set Kahoot Keyboard Shortcuts</h3>
+    
+    <form>
+        <label>Top Left - Triangle:</label> <input maxlength="1" type="text" id="triangle"><br>
+        <label>Top Right - Diamond:</label> <input maxlength="1" type="text" id="diamond"><br>
+        <label>Bottom Left - Circle:</label> <input maxlength="1" type="text" id="circle"><br>
+        <label>Bottom Right - Square:</label>  <input maxlength="1" type="text" id="square"><br><br>
+        <button type="submit">Save</button>
+        <p id="unique" hidden>Shortcuts must be unique!</p>
+    </form>
+</main>
 <script src="options.js"></script>
 
 </body>

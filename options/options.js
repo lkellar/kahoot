@@ -1,4 +1,15 @@
 function saveOptions(e) {
+    const selectors = ['#triangle', '#diamond', '#circle', '#square'];
+    const values = selectors.map((selector) => document.querySelector(selector).value);
+    if (new Set(values).size < values.length) {
+        document.getElementById('unique').hidden = false;
+        restoreOptions();
+        e.preventDefault();
+        return;
+    }
+    
+    document.getElementById('unique').hidden = true;
+    
     browser.storage.sync.set({
         triangle: document.querySelector("#triangle").value,
         diamond: document.querySelector("#diamond").value,
