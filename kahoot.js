@@ -13,7 +13,7 @@ async function keyDown(oKeyEvent) {
     let shape;
 
     shape = await fetchShape(oKeyEvent.key);
-    if (shape) {
+    if (shape !== undefined) {
         document.querySelector(`[data-functional-selector="answer answer-${shapes.indexOf(shape)}"]`).click();
     }
 }
