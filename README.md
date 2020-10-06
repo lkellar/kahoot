@@ -21,4 +21,4 @@ To change these settings, go to `about:addons` and hit the preferences button fo
 
 Alternatively, if the extension is in your toolbar, you can change your shortcuts from there.
 
-Once finished updated the shortcuts, hit save, and the new shortcuts will instantly be used.
+Once finished updating the shortcuts, hit save, and the new shortcuts will instantly be used.
