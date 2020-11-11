@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Kahoot Keyboard Shortcuts",
-  "version": "2020.2",
+  "name": "Keyboard Shortcuts for Kahoot",
+  "version": "2020.3",
 
   "description": "Adds keyboard shortcuts to Kahoot.",
 
@@ -29,7 +29,7 @@
       "48": "icon.png",
       "96": "icon@2x.png"
     },
-    "default_title": "Kahoot Keyboard Shortcuts",
+    "default_title": "Keyboard Shortcuts for Kahoot",
     "default_popup": "options/options.html"
   },
 

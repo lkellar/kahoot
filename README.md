@@ -1,4 +1,4 @@
-# Kahoot Keyboard Shortcuts
+# Keyboard Shortcuts for Kahoot
 Add custom keyboard shortcuts to Kahoot. Bind specific keys to shapes and answer faster without having to move the mouse.
 
 ## Installation
@@ -17,7 +17,7 @@ By default, the shortcuts are mapped to
 * Circle/Yellow: S
 * Square/Green: D
 
-To change these settings, go to `about:addons` and hit the preferences button for "Kahoot Keyboard Shortcuts".
+To change these settings, go to `about:addons` and hit the preferences button for "Keyboard Shortcuts for Kahoot".
 
 Alternatively, if the extension is in your toolbar, you can change your shortcuts from there.
 
