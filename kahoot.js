@@ -20,7 +20,7 @@ async function keyDown(oKeyEvent) {
 
 async function fetchShape(key) {
     let storageItem = await browser.storage.sync.get();
-    if (storageItem === {} || storageItem == undefined) {
+    if (storageItem === {} || storageItem == undefined || Object.keys(storageItem).length === 0) {
         storageItem = defaults;
         browser.storage.sync.set(defaults);
     }
