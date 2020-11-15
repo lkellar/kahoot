@@ -14,7 +14,7 @@ async function keyDown(oKeyEvent) {
 
     shape = await fetchShape(oKeyEvent.key);
     if (shape !== undefined) {
-        document.querySelector(`[data-functional-selector="answer answer-${shapes.indexOf(shape)}"]`).click();
+        document.querySelector(`[data-functional-selector*="answer-${shapes.indexOf(shape)}"]`).click();
     }
 }
 
