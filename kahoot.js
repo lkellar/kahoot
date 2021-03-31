@@ -7,22 +7,23 @@ const defaults = {
 
 // Kahoot answers now have classes like answer-0, or answer-1
 // So I order them, and use index in array to identify
-const shapes = ['triangle', 'diamond', 'circle', 'square']
+const shapes = ['triangle', 'diamond', 'circle', 'square'];
 
 async function keyDown(oKeyEvent) {
-    let shape;
+    const shape = await fetchShape(oKeyEvent.key);
 
-    shape = await fetchShape(oKeyEvent.key);
     if (shape !== undefined) {
-        document.querySelector(`[data-functional-selector*="answer-${shapes.indexOf(shape)}"]`).click();
+        document.querySelector(`[data-functional-selector*="answer-${shapes.indexOf(shape)}"]`)?.click();
+    } else if (oKeyEvent.key.toLowerCase() === 'enter') {
+        document.querySelector('[data-functional-selector="multi-select-submit-button"]')?.click();
     }
 }
 
 async function fetchShape(key) {
-    let storageItem = await browser.storage.sync.get();
+    let storageItem = await browser.storage.local.get();
     if (storageItem === {} || storageItem == undefined || Object.keys(storageItem).length === 0) {
         storageItem = defaults;
-        browser.storage.sync.set(defaults);
+        await browser.storage.local.set(defaults);
     }
     return getKeyByValue(storageItem, key);
 }

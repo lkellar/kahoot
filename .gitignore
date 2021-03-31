@@ -107,3 +107,5 @@ fabric.properties
 gen
 .idea/
 *.ai
+
+.nova

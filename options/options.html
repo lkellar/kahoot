@@ -1,25 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>Set Keyboard Shortcuts for Kahoot</title>
-</head>
-<body>
+  </head>
+  <script type="application/javascript" src="../browser-polyfill.js"></script>
+  <body>
+    <main>
+      <h3 style="font-family: sans-serif">Set Keyboard Shortcuts for Kahoot</h3>
+      <div id="buttondome">
+        <button id="triangle">
+          <span class="icon">
+            <svg width="26px" height="27px" viewBox="0 0 26 27" version="1.1">
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+              >
+                <polygon
+                  id="Triangle"
+                  stroke="#FFFFFF"
+                  fill="#FFFFFF"
+                  points="13 0 25 26 1 26"
+                ></polygon>
+              </g></svg></span
+          ><span class="binding"></span>
+        </button>
+        <button id="diamond">
+          <span class="icon">
+            <svg width="37px" height="35px" viewBox="0 0 37 35" version="1.1">
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+              >
+                <rect
+                  id="Rectangle"
+                  stroke="#FFFFFF"
+                  fill="#FFFFFF"
+                  transform="translate(17.500000, 16.500000) rotate(45.000000) translate(-17.500000, -16.500000) "
+                  x="6"
+                  y="5"
+                  width="25"
+                  height="25"
+                ></rect>
+              </g></svg></span
+          ><span class="binding"></span>
+        </button>
+        <button id="circle">
+          <span class="icon">
+            <svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1">
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <circle
+                  id="Oval"
+                  fill="#FFFFFF"
+                  cx="14.5"
+                  cy="14.5"
+                  r="14.5"
+                ></circle>
+              </g></svg></span
+          ><span class="binding">f</span>
+        </button>
+        <button id="square">
+          <span class="icon">
+            <svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1">
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+                stroke-linejoin="round"
+              >
+                <rect
+                  id="Rectangle"
+                  stroke="#FFFFFF"
+                  fill="#FFFFFF"
+                  x="1"
+                  y="1"
+                  width="25"
+                  height="25"
+                ></rect>
+              </g></svg></span
+          ><span class="binding"></span>
+        </button>
+      </div>
 
-<main>
-    <h3 style="font-family: sans-serif">Set Keyboard Shortcuts for Kahoot</h3>
-    
-    <form>
-        <label>Top Left - Triangle:</label> <input maxlength="1" type="text" id="triangle"><br>
-        <label>Top Right - Diamond:</label> <input maxlength="1" type="text" id="diamond"><br>
-        <label>Bottom Left - Circle:</label> <input maxlength="1" type="text" id="circle"><br>
-        <label>Bottom Right - Square:</label>  <input maxlength="1" type="text" id="square"><br><br>
-        <button type="submit">Save</button>
-        <p id="unique" hidden>Shortcuts must be unique!</p>
-    </form>
-</main>
-<script src="options.js"></script>
+      <div style="display: flex">
+        <button id="reset">Reset to Default</button>
+      </div>
 
-</body>
+      <p id="unique" hidden>Shortcuts must be unique!</p>
+    </main>
+
+    <div id="overlay"></div>
+    <script src="options.js"></script>
+  </body>
 </html>

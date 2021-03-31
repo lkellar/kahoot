@@ -1,41 +1,41 @@
 {
-  "manifest_version": 2,
-  "name": "Keyboard Shortcuts for Kahoot",
-  "version": "2020.4",
-
-  "description": "Adds keyboard shortcuts to Kahoot.",
-
-  "content_scripts": [
-    {
-      "matches": ["*://kahoot.it/*"],
-      "js": ["kahoot.js"]
-    }
-  ],
-
-  "icons": {
-    "48": "icon.png",
-    "96": "icon@2x.png"
-  },
-
-  "options_ui": {
-    "page": "options/options.html"
-  },
-
-  "permissions": ["storage"],
-  
-  "browser_action": {
-    "browser_style": true,
-    "default_icon": {
-      "48": "icon.png",
-      "96": "icon@2x.png"
+    "manifest_version": 2,
+    "name": "Keyboard Shortcuts for Kahoot",
+    "version": "2020.5",
+    "description": "Adds keyboard shortcuts to Kahoot.",
+    "background": {
+        "scripts": [
+            "browser-polyfill.js"
+        ]
     },
-    "default_title": "Keyboard Shortcuts for Kahoot",
-    "default_popup": "options/options.html"
-  },
-
-  "applications": {
-    "gecko": {
-      "id": "kahoot@lkellar.org"
+    "content_scripts": [
+        {
+            "matches": [
+                "*://kahoot.it/*"
+            ],
+            "js": [
+                "browser-polyfill.js",
+                "kahoot.js"
+            ]
+        }
+    ],
+    "icons": {
+        "48": "icon.png",
+        "96": "icon@2x.png"
+    },
+    "options_ui": {
+        "page": "options/options.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "browser_action": {
+        "browser_style": true,
+        "default_icon": {
+            "48": "icon.png",
+            "96": "icon@2x.png"
+        },
+        "default_title": "Keyboard Shortcuts for Kahoot",
+        "default_popup": "options/options.html"
     }
-  }
 }

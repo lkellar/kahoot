@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    min-width: 300px;
 }
 
 label {
@@ -14,4 +15,72 @@ main {
 
 #unique {
     color: red;
+}
+
+#buttondome > button {
+    border-radius: 10px;
+    border: 1px;
+    width: 45%;
+    padding: 0.5em 0;
+    margin: 1%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+    z-index: 9999999;
+    
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#buttondome > button > .icon {
+    margin-left: 1em;
+}
+
+#buttondome > button > .icon > svg {
+    vertical-align: middle;
+    max-width: 28px;
+    height: 28px;
+}
+
+#buttondome > button > .binding {
+    margin-left: calc(45% - 1em);
+    margin-right: calc(45% + 1em);
+}
+
+#triangle {
+    background-color: #e80f3d;
+}
+
+#diamond {
+    background-color: #006bca;
+}
+
+#circle {
+    background-color: #d79120;
+}
+
+#square {
+    background-color: #20881e;
+}
+
+#buttondome {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 20em;
+    margin-bottom: 2em;
+}
+
+#reset {
+    z-index: 99999;
+}
+
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    z-index: 1;
+    top: 0;
 }

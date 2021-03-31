@@ -7,6 +7,8 @@ The easiest way to install is via the [Firefox Addons Store](https://addons.mozi
 
 If you want to install from source, just clone the git repo, and add the extension as a temporary addon. Information on how to do this [can be found on MDN](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Temporary_Installation_in_Firefox).
 
+This project uses the excellent [WebExtension Polyfill](https://github.com/mozilla/webextension-polyfill/) to support the `browser` API in chrome.
+
 The repo for the Safari version is available at [katzrkool/kahoot-safari](https://github.com/katzrkool/kahoot-safari).
 
 ## Usage

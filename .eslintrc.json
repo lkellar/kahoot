@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": false,
+    "es2020": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "no-undef": "off",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "no-useless-catch": "warn",
+    "semi": "warn"
+  }
+}
