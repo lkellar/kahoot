@@ -9,7 +9,7 @@ If you want to install from source, just clone the git repo, and add the extensi
 
 This project uses the excellent [WebExtension Polyfill](https://github.com/mozilla/webextension-polyfill/) to support the `browser` API in chrome.
 
-The repo for the Safari version is available at [katzrkool/kahoot-safari](https://github.com/katzrkool/kahoot-safari).
+The repo for the Safari version is available at [lkellar/kahoot-safari](https://github.com/lkellar/kahoot-safari).
 
 ## Usage
 By default, the shortcuts are mapped to
