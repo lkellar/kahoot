@@ -1,3 +1,8 @@
+# Archive Notice
+Unforutunately, Kahoot changed their site where these extensions don't work anymore. Therefore, I've removed the extension from the stores and archived the repository.
+
+The content below has been kept for archival purposes.
+
 # Keyboard Shortcuts for Kahoot
 Add custom keyboard shortcuts to Kahoot. Bind specific keys to shapes and answer faster without having to move the mouse.
 
